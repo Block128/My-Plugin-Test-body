@@ -1,0 +1,9 @@
+Normal()
+game.Players.LocalPlayer.Character["SeeMonkey"].Handle.Mesh:Destroy()
+
+game.Players.LocalPlayer.Character['SeeMonkey'].Handle.AccessoryWeld:Destroy()
+local Weldname = Instance.new('Weld')
+Weldname.Parent = game.Players.LocalPlayer.Character['Head']
+Weldname.Part0 = game.Players.LocalPlayer.Character['SeeMonkey'].Handle
+Weldname.Part1 = game.Players.LocalPlayer.Character['Head']
+Weldname.C1 = CFrame.new(0,-1.5,-0.0)*CFrame.Angles(1.6,-0.0,0)
